@@ -1,0 +1,16 @@
+===============================================================================
+
+Some setup you must do manually if you haven't yet:
+
+  1. Run 'rake db:migrate'
+
+  2. Add '<%= free_text_init %>' in the header of the layout
+
+  3. Add ,<%= free_text key [, options={}] %> in pages to add an editable text
+
+  4. Configure the gem in 'config/initializers/free-text.rb'
+
+  5. To add repositories update the methode 'get' in FreeTextRepository
+      controller
+
+===============================================================================

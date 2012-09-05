@@ -1,0 +1,10 @@
+<% auth = FreeText.authentication.call(controller) %>
+<% if auth %>
+<div id="free_text_<%= free_text.key %>"
+     class="free_text_aloha <%= class_restriction %>"
+     data-key="<%= free_text.key %>"
+     data-locale="<%= free_text.locale %>"
+>
+<% end %>
+<%= free_text.content.html_safe %>
+<% if auth %></div><% end %>

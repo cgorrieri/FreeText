@@ -1,0 +1,1 @@
+define({ "button.save.label": "Save page's modifications" });

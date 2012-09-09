@@ -2,7 +2,7 @@ require "free_text/version"
 
 module FreeText
 
-  class Engine < Rails::Engine
+  class Engine < ::Rails::Engine
     isolate_namespace FreeText
     initializer 'engine.helper' do |app|
       ActionView::Base.send :include, TextHelper
